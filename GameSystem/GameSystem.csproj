@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E6E16E6B-E61B-4A90-BB95-08F3D382625D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GameSystem</RootNamespace>
+    <AssemblyName>GameSystem</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="artemis">
+      <HintPath>..\packages\Artemis.1.3.1\lib\net40\artemis.dll</HintPath>
+    </Reference>
+    <Reference Include="Lidgren.Network, Version=2011.3.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="MonoGame.Framework, Version=3.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="OpenTK, Version=1.1.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Tao.Sdl, Version=1.2.13.0, Culture=neutral, PublicKeyToken=9c7a200e36c0094e, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\ModelComponent.cs" />
+    <Compile Include="Components\MouseComponent.cs" />
+    <Compile Include="Components\NameComponent.cs" />
+    <Compile Include="Components\RenderSystem.cs" />
+    <Compile Include="Components\TransformComponent.cs" />
+    <Compile Include="Components\txetCompenent.cs" />
+    <Compile Include="Components\ImageComponents.cs" />
+    <Compile Include="Components\UISystem.cs" />
+    <Compile Include="Event\GameEvent.cs" />
+    <Compile Include="GameComponents\UIManagerComponent.cs" />
+    <Compile Include="GameEngine.cs" />
+    <Compile Include="GameFont.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenManager\SceneManager.cs" />
+    <Compile Include="ScreenManager\Screen.cs" />
+    <Compile Include="delete\Input.cs" />
+    <Compile Include="system\Camera\Camera2D.cs" />
+    <Compile Include="system\Camera\Camera.cs" />
+    <Compile Include="system\CountdownTimer.cs" />
+    <Compile Include="system\GameClock.cs" />
+    <Compile Include="system\HitPauseClock.cs" />
+    <Compile Include="system\Resolution.cs" />
+    <Compile Include="system\TimeUpdater.cs" />
+    <Compile Include="UI\MouseSystem.cs" />
+    <Compile Include="system\GameTimer.cs" />
+    <Compile Include="test\Screen1.cs" />
+    <Compile Include="test\Screen2.cs" />
+    <Compile Include="test\StarScreen.cs" />
+    <Compile Include="UI\Button.cs" />
+    <Compile Include="UI\UIBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

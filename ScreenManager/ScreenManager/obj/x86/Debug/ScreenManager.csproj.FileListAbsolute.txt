@@ -1,0 +1,6 @@
+D:\Projects\Tests\ScreenManager\ScreenManager\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Projects\Tests\ScreenManager\ScreenManager\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Projects\Tests\ScreenManager\ScreenManager\bin\x86\Debug\ScreenManager.exe
+D:\Projects\Tests\ScreenManager\ScreenManager\bin\x86\Debug\ScreenManager.pdb
+D:\Projects\Tests\ScreenManager\ScreenManager\obj\x86\Debug\ScreenManager.exe
+D:\Projects\Tests\ScreenManager\ScreenManager\obj\x86\Debug\ScreenManager.pdb

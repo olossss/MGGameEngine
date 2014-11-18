@@ -1,0 +1,6 @@
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\bin\x86\Release\ScreenManager.exe
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\bin\x86\Release\ScreenManager.pdb
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\obj\x86\Release\ScreenManager.csprojResolveAssemblyReference.cache
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\obj\x86\Release\Microsoft.Xna.Framework.RuntimeProfile.txt
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\obj\x86\Release\ScreenManager.exe
+H:\monogame\MGGameEngine\ScreenManager\ScreenManager\obj\x86\Release\ScreenManager.pdb

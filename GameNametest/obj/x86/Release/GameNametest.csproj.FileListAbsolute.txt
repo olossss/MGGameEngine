@@ -1,0 +1,10 @@
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\SDL.dll
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\GameNametest.exe
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\GameNametest.pdb
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\Lidgren.Network.dll
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\MonoGame.Framework.dll
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\OpenTK.dll
+H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\Tao.Sdl.dll
+H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.exe
+H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.pdb
+H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.csprojResolveAssemblyReference.cache
