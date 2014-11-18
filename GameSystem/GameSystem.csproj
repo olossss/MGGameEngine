@@ -57,6 +57,7 @@
     <Compile Include="Components\ImageComponents.cs" />
     <Compile Include="Components\UISystem.cs" />
     <Compile Include="Event\GameEvent.cs" />
+    <Compile Include="GameComponents\SceneManagerComponents.cs" />
     <Compile Include="GameComponents\UIManagerComponent.cs" />
     <Compile Include="GameEngine.cs" />
     <Compile Include="GameFont.cs" />
@@ -66,6 +67,7 @@
     <Compile Include="delete\Input.cs" />
     <Compile Include="system\Camera\Camera2D.cs" />
     <Compile Include="system\Camera\Camera.cs" />
+    <Compile Include="GameComponents\Camera3DComponents.cs" />
     <Compile Include="system\CountdownTimer.cs" />
     <Compile Include="system\GameClock.cs" />
     <Compile Include="system\HitPauseClock.cs" />

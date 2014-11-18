@@ -68,7 +68,7 @@ namespace GameSystem
 
         public override void Draw(GameTime gameTime)
         {
-            _device.Clear(Color.Maroon);
+            //_device.Clear(Color.Maroon);
             DrawString("中哈哈赶紧回家感来家具有一条短信都不能看ijihugytfdesrf觉文输入测试", 50, 50);
             //base.sprites.DrawString(this.font, "每秒帧率", new Vector2(32, 82), Color.Yellow);
             base.Draw(gameTime);

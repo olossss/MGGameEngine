@@ -830,10 +830,6 @@
             </summary>	
             <!-- No matching elements were found for the following include tag --><include file=".\..\Documentation\CodeComments.xml" path="/comments/comment[@id='SharpDX.XAudio2.ResultCode']/*"/>	
         </member>
-        <member name="F:SharpDX.XAudio2.ResultCode.XmaDecoderError">
-            <summary>Constant XmaDecoderError.</summary>
-            <unmanaged>XAUDIO2_E_XMA_DECODER_ERROR</unmanaged>
-        </member>
         <member name="F:SharpDX.XAudio2.ResultCode.XapoCreationFailed">
             <summary>Constant XapoCreationFailed.</summary>
             <unmanaged>XAUDIO2_E_XAPO_CREATION_FAILED</unmanaged>
@@ -841,6 +837,10 @@
         <member name="F:SharpDX.XAudio2.ResultCode.InvalidCall">
             <summary>Constant InvalidCall.</summary>
             <unmanaged>XAUDIO2_E_INVALID_CALL</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAudio2.ResultCode.XmaDecoderError">
+            <summary>Constant XmaDecoderError.</summary>
+            <unmanaged>XAUDIO2_E_XMA_DECODER_ERROR</unmanaged>
         </member>
         <member name="F:SharpDX.XAudio2.ResultCode.DeviceInvalidated">
             <summary>Constant DeviceInvalidated.</summary>
@@ -3146,19 +3146,6 @@
             Speed of sound in the air.
             </summary>
         </member>
-        <member name="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)">
-            <summary>	
-            Sets all global 3D audio constants.	
-            </summary>	
-            <param name="speakerChannelMask"><dd>[in]  Assignment of channels to speaker positions. This value must not be zero. The only permissible value on Xbox 360 is SPEAKER_XBOX. </dd></param>	
-            <param name="speedOfSound"><dd>[in]  Speed of sound, in user-defined world units per second. Use this value only for doppler calculations.  It must be greater than or equal to FLT_MIN. </dd></param>	
-            <param name="instance"><dd>[out]  3D audio instance handle. Use this handle when you call <see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/>. </dd></param>	
-            <returns>None.</returns>	
-            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
-            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
-            <unmanaged>HRESULT X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
-            <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
-        </member>
         <member name="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)">
             <summary>	
             Calculates DSP settings with respect to 3D parameters.	
@@ -3172,6 +3159,19 @@
             <msdn-id>ee419052</msdn-id>	
             <unmanaged>void X3DAudioCalculate([In] const X3DAUDIOHANDLE* Instance,[In] const X3DAUDIO_LISTENER* pListener,[In] const X3DAUDIO_EMITTER* pEmitter,[In] X3DAudioCalculateFlags Flags,[In] void* pDSPSettings)</unmanaged>	
             <unmanaged-short>X3DAudioCalculate</unmanaged-short>	
+        </member>
+        <member name="M:SharpDX.X3DAudio.X3DAudio.X3DAudioInitialize(SharpDX.Multimedia.Speakers,System.Single,SharpDX.X3DAudio.X3DAudioHandle@)">
+            <summary>	
+            Sets all global 3D audio constants.	
+            </summary>	
+            <param name="speakerChannelMask"><dd>[in]  Assignment of channels to speaker positions. This value must not be zero. The only permissible value on Xbox 360 is SPEAKER_XBOX. </dd></param>	
+            <param name="speedOfSound"><dd>[in]  Speed of sound, in user-defined world units per second. Use this value only for doppler calculations.  It must be greater than or equal to FLT_MIN. </dd></param>	
+            <param name="instance"><dd>[out]  3D audio instance handle. Use this handle when you call <see cref="M:SharpDX.X3DAudio.X3DAudio.X3DAudioCalculate(SharpDX.X3DAudio.X3DAudioHandle@,SharpDX.X3DAudio.Listener,SharpDX.X3DAudio.Emitter,SharpDX.X3DAudio.CalculateFlags,System.IntPtr)"/>. </dd></param>	
+            <returns>None.</returns>	
+            <!-- No matching elements were found for the following include tag --><include file="..\..\Documentation\CodeComments.xml" path="/comments/comment[@id='X3DAudioInitialize']/*"/>	
+            <msdn-id>microsoft.directx_sdk.x3daudio.x3daudioinitialize</msdn-id>	
+            <unmanaged>HRESULT X3DAudioInitialize([In] SPEAKER_FLAGS SpeakerChannelMask,[In] float SpeedOfSound,[Out] X3DAUDIOHANDLE* Instance)</unmanaged>	
+            <unmanaged-short>X3DAudioInitialize</unmanaged-short>	
         </member>
         <member name="M:SharpDX.X3DAudio.X3DAudio.#ctor(SharpDX.Multimedia.Speakers)">
             <summary>
@@ -4257,29 +4257,25 @@
             Get or Set the parameters for this AudioProcessor
             </summary>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Echo.MaximumWetdrymix">
-            <summary>Constant MaximumWetdrymix.</summary>
-            <unmanaged>FXECHO_MAX_WETDRYMIX</unmanaged>
-        </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.MinimumWetdrymix">
             <summary>Constant MinimumWetdrymix.</summary>
             <unmanaged>FXECHO_MIN_WETDRYMIX</unmanaged>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumFeedback">
-            <summary>Constant MinimumFeedback.</summary>
-            <unmanaged>FXECHO_MIN_FEEDBACK</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.DefaultWetdrymix">
             <summary>Constant DefaultWetdrymix.</summary>
             <unmanaged>FXECHO_DEFAULT_WETDRYMIX</unmanaged>
         </member>
+        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumFeedback">
+            <summary>Constant MinimumFeedback.</summary>
+            <unmanaged>FXECHO_MIN_FEEDBACK</unmanaged>
+        </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.MaximumFeedback">
             <summary>Constant MaximumFeedback.</summary>
             <unmanaged>FXECHO_MAX_FEEDBACK</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumDelay">
-            <summary>Constant MinimumDelay.</summary>
-            <unmanaged>FXECHO_MIN_DELAY</unmanaged>
+        <member name="F:SharpDX.XAPO.Fx.Echo.MaximumWetdrymix">
+            <summary>Constant MaximumWetdrymix.</summary>
+            <unmanaged>FXECHO_MAX_WETDRYMIX</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.DefaultDelay">
             <summary>Constant DefaultDelay.</summary>
@@ -4288,6 +4284,10 @@
         <member name="F:SharpDX.XAPO.Fx.Echo.DefaultFeedback">
             <summary>Constant DefaultFeedback.</summary>
             <unmanaged>FXECHO_DEFAULT_FEEDBACK</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.Echo.MinimumDelay">
+            <summary>Constant MinimumDelay.</summary>
+            <unmanaged>FXECHO_MIN_DELAY</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Echo.MaximumDelay">
             <summary>Constant MaximumDelay.</summary>
@@ -4307,13 +4307,9 @@
             A Equalizer XAPO AudioProcessor
             </summary>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.MinimumBandwidth">
-            <summary>Constant MinimumBandwidth.</summary>
-            <unmanaged>FXEQ_MIN_BANDWIDTH</unmanaged>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter1">
-            <summary>Constant DefaultFrequencyCenter1.</summary>
-            <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_1</unmanaged>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumBandwidth">
+            <summary>Constant MaximumBandwidth.</summary>
+            <unmanaged>FXEQ_MAX_BANDWIDTH</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumFrameRate">
             <summary>Constant MaximumFrameRate.</summary>
@@ -4323,9 +4319,17 @@
             <summary>Constant MinimumFrameRate.</summary>
             <unmanaged>FXEQ_MIN_FRAMERATE</unmanaged>
         </member>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.MinimumBandwidth">
+            <summary>Constant MinimumBandwidth.</summary>
+            <unmanaged>FXEQ_MIN_BANDWIDTH</unmanaged>
+        </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumFrequencyCenter">
             <summary>Constant MaximumFrequencyCenter.</summary>
             <unmanaged>FXEQ_MAX_FREQUENCY_CENTER</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter1">
+            <summary>Constant DefaultFrequencyCenter1.</summary>
+            <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_1</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumGain">
             <summary>Constant MaximumGain.</summary>
@@ -4334,10 +4338,6 @@
         <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter2">
             <summary>Constant DefaultFrequencyCenter2.</summary>
             <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_2</unmanaged>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultBandwidth">
-            <summary>Constant DefaultBandwidth.</summary>
-            <unmanaged>FXEQ_DEFAULT_BANDWIDTH</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MinimumGain">
             <summary>Constant MinimumGain.</summary>
@@ -4351,13 +4351,13 @@
             <summary>Constant DefaultGain.</summary>
             <unmanaged>FXEQ_DEFAULT_GAIN</unmanaged>
         </member>
+        <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultBandwidth">
+            <summary>Constant DefaultBandwidth.</summary>
+            <unmanaged>FXEQ_DEFAULT_BANDWIDTH</unmanaged>
+        </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.DefaultFrequencyCenter3">
             <summary>Constant DefaultFrequencyCenter3.</summary>
             <unmanaged>FXEQ_DEFAULT_FREQUENCY_CENTER_3</unmanaged>
-        </member>
-        <member name="F:SharpDX.XAPO.Fx.Equalizer.MaximumBandwidth">
-            <summary>Constant MaximumBandwidth.</summary>
-            <unmanaged>FXEQ_MAX_BANDWIDTH</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Equalizer.MinimumFrequencyCenter">
             <summary>Constant MinimumFrequencyCenter.</summary>
@@ -4377,10 +4377,6 @@
             A MateringLimiter XAPO AudioProcessor
             </summary>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.DefaultRelease">
-            <summary>Constant DefaultRelease.</summary>
-            <unmanaged>FXMASTERINGLIMITER_DEFAULT_RELEASE</unmanaged>
-        </member>
         <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.MaximumRelease">
             <summary>Constant MaximumRelease.</summary>
             <unmanaged>FXMASTERINGLIMITER_MAX_RELEASE</unmanaged>
@@ -4392,6 +4388,10 @@
         <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.DefaultLoudness">
             <summary>Constant DefaultLoudness.</summary>
             <unmanaged>FXMASTERINGLIMITER_DEFAULT_LOUDNESS</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.DefaultRelease">
+            <summary>Constant DefaultRelease.</summary>
+            <unmanaged>FXMASTERINGLIMITER_DEFAULT_RELEASE</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.MasteringLimiter.MaximumLoudness">
             <summary>Constant MaximumLoudness.</summary>
@@ -4423,13 +4423,13 @@
             <summary>Constant DefaultRoomsize.</summary>
             <unmanaged>FXREVERB_DEFAULT_ROOMSIZE</unmanaged>
         </member>
-        <member name="F:SharpDX.XAPO.Fx.Reverb.MaximumRoomsize">
-            <summary>Constant MaximumRoomsize.</summary>
-            <unmanaged>FXREVERB_MAX_ROOMSIZE</unmanaged>
-        </member>
         <member name="F:SharpDX.XAPO.Fx.Reverb.DefaultDiffusion">
             <summary>Constant DefaultDiffusion.</summary>
             <unmanaged>FXREVERB_DEFAULT_DIFFUSION</unmanaged>
+        </member>
+        <member name="F:SharpDX.XAPO.Fx.Reverb.MaximumRoomsize">
+            <summary>Constant MaximumRoomsize.</summary>
+            <unmanaged>FXREVERB_MAX_ROOMSIZE</unmanaged>
         </member>
         <member name="F:SharpDX.XAPO.Fx.Reverb.MaximumDiffusion">
             <summary>Constant MaximumDiffusion.</summary>
