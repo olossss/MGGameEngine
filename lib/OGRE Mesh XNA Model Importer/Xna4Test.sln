@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xna4Test", "Xna4Test\Xna4Test\Xna4Test.csproj", "{BAC4954B-7546-425F-B966-1AAA68C49B80}"
+EndProject
+Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "Xna4TestContent", "Xna4Test\Xna4TestContent\Xna4TestContent.contentproj", "{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myko.Xna.OgreImporters", "Myko.Xna.OgreImporters\Myko.Xna.OgreImporters.csproj", "{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Myko.Xna.Animation", "Myko.Xna.Animation\Myko.Xna.Animation.csproj", "{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Debug|x86.ActiveCfg = Debug|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Debug|x86.Build.0 = Debug|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Release|Any CPU.ActiveCfg = Release|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Release|Mixed Platforms.Build.0 = Release|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Release|x86.ActiveCfg = Release|x86
+		{BAC4954B-7546-425F-B966-1AAA68C49B80}.Release|x86.Build.0 = Release|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Debug|x86.ActiveCfg = Debug|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Release|Any CPU.ActiveCfg = Release|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{DBBE11A3-B3FC-40BF-8FA1-FEC1D3818C0D}.Release|x86.ActiveCfg = Release|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Debug|x86.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Debug|x86.Build.0 = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Release|Any CPU.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Release|Mixed Platforms.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Release|Mixed Platforms.Build.0 = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Release|x86.ActiveCfg = Debug|x86
+		{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}.Release|x86.Build.0 = Debug|x86
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EEB94851-D9B0-4381-ADE8-6D71A2FAF97D}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
