@@ -1,0 +1,22 @@
+{
+  "version" : 1.2,
+  "Template" : "",
+  "ID": 1111,
+  "Name": "",
+  "Introduction" : "",
+  "Size": {
+    "Height": 255,
+    "width": 255,
+    "Ground height" : 255
+  },
+  "Script" : "",
+  "tiles" : "",
+  "tree" : "",
+  "Unit" : "",
+  "array": [
+    1,
+    2,
+    3
+  ],
+  "string": "Hello World"
+}

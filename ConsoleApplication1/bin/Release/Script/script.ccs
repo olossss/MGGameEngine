@@ -1,0 +1,16 @@
+using System;
+using System.Diagnostics;
+using System.Windows.Forms;
+using Yko.Game;
+
+class Script
+{
+    [STAThread]
+    public static void Hello(string greeting)
+              {
+		    YkoGame  n = new  YkoGame();
+		    string nn = n.dd();
+		    Console.WriteLine(greeting);
+		    Console.WriteLine(nn);
+              }
+}

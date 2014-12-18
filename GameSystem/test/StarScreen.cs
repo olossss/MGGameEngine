@@ -5,13 +5,15 @@ using System.Text;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+using HYM.System.library;
+using HYM.UI.library;
 
 namespace GameSystem
 {
     class StarScreen : Screen
     {
         //SpriteBatch sprites;
-        GameTimer delayTimer = new GameTimer();
+        HYM.System.library.GameTimer delayTimer = new HYM.System.library.GameTimer();
         private Texture2D backgroundTexture;
         public StarScreen()
             : base( "StarScreen")

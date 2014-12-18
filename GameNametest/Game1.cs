@@ -10,6 +10,7 @@ using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
 using Microsoft.Xna.Framework.Net;
 using Microsoft.Xna.Framework.Storage;
+using RaisingStudio.Xna.Graphics;
 
 namespace ScreenManager
 {
@@ -19,7 +20,7 @@ namespace ScreenManager
     public class Game1 : Microsoft.Xna.Framework.Game
     {
         GraphicsDeviceManager graphics;
-        
+        DrawingBatch drawingBatch;
         public Game1()
         {
             graphics = new GraphicsDeviceManager(this);
@@ -38,6 +39,7 @@ namespace ScreenManager
 
         protected override void LoadContent()
         {
+            drawingBatch = new DrawingBatch(GraphicsDevice);
             SCREEN_MANAGER.Init();
         }
 
@@ -62,6 +64,16 @@ namespace ScreenManager
             // Tell ScreenManager to draw
             SCREEN_MANAGER.Draw(gameTime);
 
+            drawingBatch.Begin();
+            drawingBatch.DrawLine(10, 20, 100, 20, Color.Red);
+            drawingBatch.DrawRectangle(120, 10, 100, 20, Color.Blue);
+            drawingBatch.DrawTriangle(240, 10, 240, 60, 200, 60, Color.Black);
+            drawingBatch.DrawEllipse(310, 10, 50, 50, Color.Green);
+            drawingBatch.DrawPolyline(new Vector2[] { new Vector2(410, 10), new Vector2(440, 10), new Vector2(420, 20), new Vector2(440, 40), new Vector2(410, 60) }, Color.Aqua);
+            drawingBatch.DrawFilledRectangle(120, 110, 50, 0, Color.Blue);
+            drawingBatch.DrawFilledTriangle(240, 110, 240, 160, 200, 160, Color.Brown);
+            drawingBatch.DrawFilledEllipse(310, 110, 80, 40, Color.Green);
+            drawingBatch.End();
             base.Draw(gameTime);
         }
     }

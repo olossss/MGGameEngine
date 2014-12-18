@@ -1,0 +1,32 @@
+material dragonspawn
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 1 1
+			diffuse 1 1 1
+			specular 0 0 0 0
+			emissive 0.6 0.407843 0.988235
+			depth_write off
+			scene_blend one one
+			fog_override true none
+			texture_unit
+			{
+				texture dragonspawn_spectral.dds
+				colour_op modulate
+			}
+			texture_unit
+			{
+				tex_coord_set 1
+				tex_Address_mode clamp
+				env_map cubic_normal
+				cubic_texture falloffcube.dds combinedUVW
+				colour_op modulate
+			}
+
+		}
+	}
+}
+
+

@@ -42,52 +42,42 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HUM_M.MESH.xml">
-      <Name>HUM_M.MESH</Name>
-      <Importer>MeshImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <ProcessorParameters_DefaultEffect>SkinnedEffect</ProcessorParameters_DefaultEffect>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\..\Myko.Xna.OgreImporters\Myko.Xna.OgreImporters.csproj">
       <Project>{1BD11E10-FDE3-4D49-BB3D-4544C37A8A32}</Project>
       <Name>Myko.Xna.OgreImporters</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="HUM_M.SKELETON.xml">
-      <Name>HUM_M.SKELETON</Name>
+    <Compile Include="dog\dog.MESH.xml">
+      <Name>dog.MESH</Name>
+      <Importer>MeshImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dog\attack1.SKELETON.xml">
+      <Name>attack1.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="dog\attack2.SKELETON.xml">
+      <Name>attack2.SKELETON</Name>
       <Importer>SkeletonImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="RUN.SKELETON.xml">
-      <Name>RUN.SKELETON</Name>
-      <Importer>SkeletonImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
+    <Compile Include="dog\dog_pet.png">
+      <Name>dog_pet</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ATTACK1.SKELETON.xml">
-      <Name>ATTACK1.SKELETON</Name>
-      <Importer>SkeletonImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ATTACK2.SKELETON.xml">
-      <Name>ATTACK2.SKELETON</Name>
-      <Importer>SkeletonImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Include="IDLE.SKELETON.xml">
-      <Name>IDLE.SKELETON</Name>
-      <Importer>SkeletonImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
+    <Compile Include="dog\dog.dds">
+      <Name>dog</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -98,17 +88,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fiend\FIEND.MESH.xml">
-      <Name>FIEND.MESH</Name>
-      <Importer>MeshImporter</Importer>
-      <Processor>ModelProcessor</Processor>
-      <ProcessorParameters_DefaultEffect>SkinnedEffect</ProcessorParameters_DefaultEffect>
-    </Compile>
-    <Compile Include="Fiend\FIEND.SKELETON.xml">
-      <Name>FIEND.SKELETON</Name>
-      <Importer>SkeletonImporter</Importer>
-      <Processor>PassThroughProcessor</Processor>
-    </Compile>
     <Compile Include="Fiend\IDLE.SKELETON.xml">
       <Name>IDLE.SKELETON</Name>
       <Importer>SkeletonImporter</Importer>
@@ -116,14 +95,199 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="robot.mesh.xml">
-      <Name>robot.mesh</Name>
+    <Compile Include="Fiend\FIEND.SKELETON.xml">
+      <Name>FIEND.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fiend\FIEND.MESH.xml">
+      <Name>FIEND.MESH</Name>
       <Importer>MeshImporter</Importer>
       <Processor>ModelProcessor</Processor>
-      <ProcessorParameters_DefaultEffect>SkinnedEffect</ProcessorParameters_DefaultEffect>
     </Compile>
-    <Compile Include="robot.skeleton.xml">
-      <Name>robot.skeleton</Name>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dog\run.SKELETON.xml">
+      <Name>run.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="dog\walk.SKELETON.xml">
+      <Name>walk.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dog\fidget_alert.SKELETON.xml">
+      <Name>fidget_alert.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dog\attack3.SKELETON.xml">
+      <Name>attack3.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\dragonspawn.dds">
+      <Name>dragonspawn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\Attack1.SKELETON.xml">
+      <Name>Attack1.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Attack2.SKELETON.xml">
+      <Name>Attack2.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\Dragonspawn.MESH.xml">
+      <Name>Dragonspawn.MESH</Name>
+      <Importer>MeshImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\Dragonspawn.SKELETON.xml">
+      <Name>Dragonspawn.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Hit.SKELETON.xml">
+      <Name>Hit.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Run.SKELETON.xml">
+      <Name>Run.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Spawn.SKELETON.xml">
+      <Name>Spawn.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Special_Breath.SKELETON.xml">
+      <Name>Special_Breath.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Stunned.SKELETON.xml">
+      <Name>Stunned.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\Walk.SKELETON.xml">
+      <Name>Walk.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\Die.SKELETON.xml">
+      <Name>Die.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\Idle.SKELETON.xml">
+      <Name>Idle.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dragonspawn\dragonspawnchampion.dds">
+      <Name>dragonspawnchampion</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+    <Compile Include="Dragonspawn\dragonspawn_illum.dds">
+      <Name>dragonspawn_illum</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DragonspawnSpectral\Dragonspawn.dds">
+      <Name>Dragonspawn</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DragonspawnSpectral\Attack1.SKELETON.xml">
+      <Name>Attack1.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Attack2.SKELETON.xml">
+      <Name>Attack2.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Die.SKELETON.xml">
+      <Name>Die.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Dragonspawn.MESH.xml">
+      <Name>Dragonspawn.MESH</Name>
+      <Importer>MeshImporter</Importer>
+      <Processor>ModelProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Dragonspawn.SKELETON.xml">
+      <Name>Dragonspawn.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Hit.SKELETON.xml">
+      <Name>Hit.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Idle.SKELETON.xml">
+      <Name>Idle.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Run.SKELETON.xml">
+      <Name>Run.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Spawn.SKELETON.xml">
+      <Name>Spawn.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Special_Breath.SKELETON.xml">
+      <Name>Special_Breath.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Stunned.SKELETON.xml">
+      <Name>Stunned.SKELETON</Name>
+      <Importer>SkeletonImporter</Importer>
+      <Processor>PassThroughProcessor</Processor>
+    </Compile>
+    <Compile Include="DragonspawnSpectral\Walk.SKELETON.xml">
+      <Name>Walk.SKELETON</Name>
       <Importer>SkeletonImporter</Importer>
       <Processor>PassThroughProcessor</Processor>
     </Compile>

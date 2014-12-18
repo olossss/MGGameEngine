@@ -1,0 +1,55 @@
+{
+  "Resources" :
+  {
+    "Modle": "Dragonspawn\\Dragonspawn.MESH",
+    "Skeleton": {
+    "Attack1": "Dragonspawn\\Attack1.SKELETON",
+    "Attack2": "Dragonspawn\\Attack2.SKELETON",
+    "Die": "Dragonspawn\\Die.SKELETON",
+    "Hit": "Dragonspawn\\Hit.SKELETON",
+    "Idle": "Dragonspawn\\Idle.SKELETON",
+    "Run": "Dragonspawn\\Run.SKELETON",
+    "Spawn": "Dragonspawn\\Spawn.SKELETON",
+    "Special_Breath": "Dragonspawn\\Special_Breath.SKELETON",
+    "Stunned": "Dragonspawn\\Stunned.SKELETON",
+    "Walk": "Dragonspawn\\Walk.SKELETON"
+  }
+  },
+  "Skill": [
+    "Sele",
+    "Sole",
+    "Soli"
+  ],
+  "Text":{
+    "Type": "Edle",
+    "Name": "Dragonspawn",
+    "Description":"Description"
+  },
+  "State":{
+    "Healthy Point Max" : 100,
+    "Healthy Point Recovery" : -5,
+    "Magic Point Max" : 100,
+    "Magic Point Recovery" : 1
+  },
+  "Mobile":{
+    "base Speed" : 200,
+    "Turn Speed" : 60,
+    "Mobile Type" : "",
+    "Height" : 50
+  },
+  "Battle":{
+    "base attack force" : 25,
+    "attack force Dice" : 25,
+    "Defense" :5,
+    "Range": 500,
+    "attack  Speed" : 0.2
+  },
+  "Attribute" : {
+    "Scaling" : 1,
+    "Power" :  11,
+    "Agile" : 5,
+    "Intelligence":32,
+    "Endurance": 3,
+    "Level Max" : 100
+  }
+}
