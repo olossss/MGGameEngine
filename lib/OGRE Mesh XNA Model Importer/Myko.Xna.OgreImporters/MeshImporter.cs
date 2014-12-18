@@ -89,9 +89,7 @@ namespace Myko.Xna.OgreImporters
                 //else if (xmlSubMesh.Material == "Hum_M/MidLeg")
                 //    builder.SetMaterial(new SkinnedMaterialContent { Texture = new ExternalReference<TextureContent>("TL2_ARMORTEST_PANTS.png") });
                 //else
-                int n = filename.Length;
-                string Str = filename.Substring(0,n-9);
-                builder.SetMaterial(new SkinnedMaterialContent { Texture = new ExternalReference<TextureContent>(Str + ".dds") });
+                    builder.SetMaterial(new SkinnedMaterialContent { Texture = new ExternalReference<TextureContent>("Fiend\\FIEND.dds") });
 
                 var normalChannel = builder.CreateVertexChannel<Vector3>(VertexChannelNames.Normal());
                 var uvChannel = builder.CreateVertexChannel<Vector2>(VertexChannelNames.TextureCoordinate(0));

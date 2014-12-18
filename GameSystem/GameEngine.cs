@@ -1,19 +1,18 @@
 ﻿#region Using Statements
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
-using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
-using Microsoft.Xna.Framework.Media;
+using Microsoft.Xna.Framework.Storage;
+using Microsoft.Xna.Framework.GamerServices;
 using Artemis;
 using Artemis.System;
-using HYM.UI.library;
-using Myko.Xna.Animation;
-using HYM.System.library;
+using GameSystem.Components;
+using GameSystem.GameComponents;
+using GameSystem.Event;
+using GameSystem.system;
 #endregion
 
 namespace GameSystem
@@ -24,42 +23,34 @@ namespace GameSystem
     public class GameEngine : Game
     {
         GraphicsDeviceManager graphics;
+        private static readonly TimeSpan OneSecond = TimeSpan.FromSeconds(1);
+        /// <summary>The frame counter.</summary>
+        private int frameCounter;
+        /// <summary>The frame rate.</summary>
+        private int frameRate;
+        /// <summary>The elapsed time.</summary>
+        private TimeSpan elapsedTime;
 
         SpriteBatch sprites;
         private SpriteFont font;
-       
+        Model shipModel;
         Camera3DComponents camera;
-        GameTime Updatetime;
-        GameTime Drawtime;
-        //public static GameSystem.PluginServices Plugins = new PluginServices();
         public GameEngine()
             : base()
         {
-           // this.elapsedTime = TimeSpan.Zero;
+            this.elapsedTime = TimeSpan.Zero;
             graphics = new GraphicsDeviceManager(this);
-            graphics.PreferMultiSampling = true;
             Content.RootDirectory = "Content";
             IsMouseVisible = false;//true;//显示鼠标
             this.IsFixedTimeStep = false;//可以让XNA不按固定时间间隔调用Update方法
-            camera = new Camera3DComponents(this, new Vector3(0, 0.5f, 2), new Vector3(0, 0.5f, 0), Vector3.Up);
+            camera = new Camera3DComponents(this, new Vector3(0.0f, 0.0f, 50.0f), Vector3.Zero, Vector3.Up);
             Components.Add(camera);
-            Components.Add(new UIManager(this));
             Components.Add(new SceneManagerComponents(this));
-            
-           // Components.Add(new TerrainManagerComponents(this));
-            //加载插件
-            PluginManager.Plugins.FindPlugins("Plugins");
-            foreach (Types.AvailablePlugin pluginOn in PluginManager.Plugins.AvailablePlugins)
-            {
-                //TreeNode newNode = new TreeNode(pluginOn.Instance.Name);
-                //this.tvwPlugins.Nodes.Add(newNode);
-                //newNode = null;
-            }
+            Components.Add(new UIManagerComponent(this));
         }
         protected override void Initialize()
         {
             //graphics.ToggleFullScreen();
-            //Updatetime = new GameTime();
             Window.Title = "game";
             sprites = new SpriteBatch(graphics.GraphicsDevice);
             font = Content.Load<SpriteFont>("SpriteFont1");
@@ -67,22 +58,18 @@ namespace GameSystem
             EntitySystem.BlackBoard.SetEntry("GraphicsDevice", this.GraphicsDevice);
             EntitySystem.BlackBoard.SetEntry("SpriteFont", this.font);
             EntitySystem.BlackBoard.SetEntry("EnemyInterval", 500);
-            EntitySystem.BlackBoard.SetEntry("camera", this.camera);
-            
-
             base.Initialize();
         }
         protected override void LoadContent()
         {
-
+            shipModel = Content.Load<Model>("Ship");
             SCREEN_MANAGER.add_screen(new Screen1());
             SCREEN_MANAGER.add_screen(new Screen2());
             SCREEN_MANAGER.add_screen(new StarScreen());
             SCREEN_MANAGER.goto_screen("StarScreen");
             SCREEN_MANAGER.Init();
-            GameEvent.Quit += new HYM.System.library.System(this.Quit);
-
-            base.LoadContent();
+            GameEvent.Quit += new Event.System(this.Quit);
+            //base.LoadContent();
         }
         protected override void UnloadContent()
         {
@@ -92,9 +79,14 @@ namespace GameSystem
         {
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
-            Updatetime = gameTime;
-            EntitySystem.BlackBoard.SetEntry("Updatetime", this.Updatetime);
-            //PluginManager.Plugins.Update(gameTime);
+            ++this.frameCounter;
+            this.elapsedTime += gameTime.ElapsedGameTime;
+            if (this.elapsedTime > OneSecond)
+            {
+                this.elapsedTime -= OneSecond;
+                this.frameRate = this.frameCounter;
+                this.frameCounter = 0;
+            }
             base.Update(gameTime);
 
             
@@ -103,12 +95,50 @@ namespace GameSystem
         protected override void Draw(GameTime gameTime)
         {
             graphics.GraphicsDevice.Clear(ClearOptions.Target, Color.Green, 1, 0);
-            Drawtime = gameTime;
-            EntitySystem.BlackBoard.SetEntry("Drawtime", this.Drawtime);
-            //PluginManager.Plugins.Draw(gameTime);
+            
+            string fps = string.Format("每秒帧率: {0}", this.frameRate);
+            string fpss = string.Format("每秒帧率: {0}", this.frameCounter);
+            
+            this.sprites.Begin();
+            sprites.DrawString(this.font, fpss, new Vector2(32, 30), Color.Yellow);
+            sprites.DrawString(this.font, fps, new Vector2(32, 82), Color.Yellow);
+            this.sprites.End();
+            
+             //首先要求XNA Framework替我們清除螢幕成淺藍色的底色
+            graphics.GraphicsDevice.Clear(Color.CornflowerBlue);
+            //將模型放置在遊戲世界的中心
+            Matrix world = Matrix.CreateTranslation(0.0f, 0.0f, 0.0f);
+            //從離Z軸50單位的地方向著原點看
+            Matrix view = Matrix.CreateLookAt(new Vector3(0.0f, 2000.0f, 3500.0f), Vector3.Zero, Vector3.Up);
+            //將3D到2D螢幕的投影轉換
+            Matrix projection = Matrix.CreatePerspectiveFieldOfView((float)Math.PI / 4.0f, 800.0f / 600.0f, 10.0f, 100000.0f);
+
+            //宣告變數儲存機器人的骨骼資訊
+            Matrix[] temprobot = new Matrix[shipModel.Bones.Count];
+            shipModel.CopyAbsoluteBoneTransformsTo(temprobot);
+            //將機器人的每個部位畫出來
+            foreach (ModelMesh mesh in shipModel.Meshes)
+            {
+                // 這邊使用XNA提供的基本效果來繪製模型
+                foreach (BasicEffect effect in mesh.Effects)
+                {
+                    // 使用XNA提供的打光方法，才不會一片漆黑
+                    effect.EnableDefaultLighting();
+                    // 將模型的位置傳給效果來繪製模型
+                    effect.World = temprobot[mesh.ParentBone.Index] * world;
+                    effect.View = camera.view;
+                    effect.Projection = camera.projection;
+                    // 實際把模型畫出來
+                    mesh.Draw();
+                }
+            }
             base.Draw(gameTime);
             
         }
+        private void DrawString(String str, int x, int y)
+        {
+            this.sprites.DrawString(font, str, new Vector2(x, y), Color.White);
+        } 
         private void Quit()
         {
             Exit();

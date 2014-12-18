@@ -6,19 +6,16 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-
 namespace ScreenManager
 {
     class Screen1 : Screen
     {
-        
         public Screen1(GraphicsDevice device) :base(device,"screen1")
         {
         }
 
         public override bool Init()
         {
-            
             return base.Init();
         }
 

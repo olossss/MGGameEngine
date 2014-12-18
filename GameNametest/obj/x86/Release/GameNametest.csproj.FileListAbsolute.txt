@@ -8,15 +8,3 @@ H:\monogame\MGGameEngine\GameNametest\bin\WindowsGL\Release\Tao.Sdl.dll
 H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.exe
 H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.pdb
 H:\monogame\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.csprojResolveAssemblyReference.cache
-H:\git\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.exe
-H:\git\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.pdb
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\SDL.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\GameNametest.exe
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\GameNametest.pdb
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\Lidgren.Network.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\MonoGame.Framework.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\OpenTK.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\RaisingStudio.Xna.Graphics.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\Tao.Sdl.dll
-H:\git\MGGameEngine\GameNametest\bin\WindowsGL\Release\RaisingStudio.Xna.Graphics.pdb
-H:\git\MGGameEngine\GameNametest\obj\x86\Release\GameNametest.csprojResolveAssemblyReference.cache

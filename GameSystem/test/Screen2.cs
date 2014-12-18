@@ -9,8 +9,9 @@ using Artemis;
 using Artemis.Attributes;
 using Artemis.Manager;
 using Artemis.System;
-using HYM.System.library;
-using HYM.UI.library;
+using GameSystem.Components;
+using GameSystem.UI;
+using GameSystem.Event;
 
 namespace GameSystem
 {
@@ -34,7 +35,7 @@ namespace GameSystem
                 PressImage = "button-1-R",
                 Text = "确定",
             };
-            GameEvent.Button_Click += new HYM.System.library.UI(this.Button_Click);
+            GameEvent.Button_Click += new Event.UI(this.Button_Click);
             MouseSystem m_MouseSystem = new MouseSystem();
             return base.Init();
         }

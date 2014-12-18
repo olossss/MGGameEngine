@@ -1,8 +1,0 @@
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\PluginInterface.dll
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\PluginInterface.pdb
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\Lidgren.Network.dll
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\MonoGame.Framework.dll
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\OpenTK.dll
-H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Release\Tao.Sdl.dll
-H:\git\MGGameEngine\PluginInterface\obj\x86\Release\PluginInterface.dll
-H:\git\MGGameEngine\PluginInterface\obj\x86\Release\PluginInterface.pdb

@@ -63,15 +63,3 @@ H:\git\MGGameEngine\GameSystem\bin\Release\Microsoft.Xna.Framework.xml
 H:\git\MGGameEngine\GameSystem\obj\Release\GameSystem.csprojResolveAssemblyReference.cache
 H:\git\MGGameEngine\GameSystem\obj\Release\GameSystem.dll
 H:\git\MGGameEngine\GameSystem\obj\Release\GameSystem.pdb
-H:\git\MGGameEngine\GameSystem\bin\Release\Myko.Xna.Animation.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\Myko.Xna.Animation.pdb
-H:\git\MGGameEngine\GameSystem\bin\Release\RaisingStudio.Xna.Graphics.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\RaisingStudio.Xna.Graphics.pdb
-H:\git\MGGameEngine\GameSystem\bin\Release\Newtonsoft.Json.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\Newtonsoft.Json.xml
-H:\git\MGGameEngine\GameSystem\bin\Release\PluginInterface.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\PluginInterface.pdb
-H:\git\MGGameEngine\GameSystem\bin\Release\HYM.System.library.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\HYM.System.library.pdb
-H:\git\MGGameEngine\GameSystem\bin\Release\HYM.UI.library.dll
-H:\git\MGGameEngine\GameSystem\bin\Release\HYM.UI.library.pdb

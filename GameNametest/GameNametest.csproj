@@ -69,12 +69,6 @@
   <ItemGroup>
     <Folder Include="Content\" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\RaisingStudio.Xna.Graphics\RaisingStudio.Xna.Graphics.csproj">
-      <Project>{cd236cc1-983a-49bb-a00c-c8b50493fe70}</Project>
-      <Name>RaisingStudio.Xna.Graphics</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
