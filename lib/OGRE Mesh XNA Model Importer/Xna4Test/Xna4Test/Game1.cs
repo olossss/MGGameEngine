@@ -23,7 +23,10 @@ namespace Xna4Test
         BasicEffect basicEffect;
         Skeleton skeleton1;
         Skeleton skeleton2;
-
+        Skeleton skeleton3;
+        Skeleton skeleton4;
+        Skeleton skeleton5;
+        Skeleton skeleton6;
         Skeleton skeleton;
 
         public Game1()
@@ -55,11 +58,11 @@ namespace Xna4Test
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            model = Content.Load<Model>("Fiend\\FIEND.MESH");
-            skeleton1 = Content.Load<Skeleton>("Fiend\\FIEND.SKELETON");
-            skeleton1.CopyModelBindpose(model);
-            skeleton2 = Content.Load<Skeleton>("Fiend\\IDLE.SKELETON");
-            skeleton2.CopyModelBindpose(model);
+            //model = Content.Load<Model>("Fiend\\FIEND.MESH");
+            //skeleton1 = Content.Load<Skeleton>("Fiend\\FIEND.SKELETON");
+            //skeleton1.CopyModelBindpose(model);
+            //skeleton2 = Content.Load<Skeleton>("Fiend\\IDLE.SKELETON");
+            //skeleton2.CopyModelBindpose(model);
             //model = Content.Load<Model>("HUM_M.MESH");
             //skeleton1 = Content.Load<Skeleton>("IDLE.SKELETON");
             //skeleton1.CopyModelBindpose(model);
@@ -70,7 +73,25 @@ namespace Xna4Test
             //skeleton1.CopyModelBindpose(model);
             //skeleton2 = Content.Load<Skeleton>("robot.skeleton");
             //skeleton2.CopyModelBindpose(model);
-
+            //model = Content.Load<Model>("dog\\dog.MESH");
+            //skeleton1 = Content.Load<Skeleton>("dog\\attack1.SKELETON");
+            //skeleton1.CopyModelBindpose(model);
+            //skeleton2 = Content.Load<Skeleton>("dog\\attack2.SKELETON");
+            //skeleton2.CopyModelBindpose(model);
+            //skeleton3 = Content.Load<Skeleton>("dog\\attack3.SKELETON");
+            //skeleton3.CopyModelBindpose(model);
+            //skeleton4 = Content.Load<Skeleton>("dog\\fidget_alert.SKELETON");
+            //skeleton4.CopyModelBindpose(model);
+            //skeleton5 = Content.Load<Skeleton>("dog\\run.SKELETON");
+            //skeleton5.CopyModelBindpose(model);
+            //skeleton6 = Content.Load<Skeleton>("dog\\walk.SKELETON");
+            //skeleton6.CopyModelBindpose(model);
+            model = Content.Load<Model>("DragonspawnSpectral\\Dragonspawn.MESH");
+            skeleton1 = Content.Load<Skeleton>("Dragonspawn\\Hit.SKELETON");
+            skeleton1.CopyModelBindpose(model);
+            skeleton2 = Content.Load<Skeleton>("Dragonspawn\\Run.SKELETON");
+            skeleton2.CopyModelBindpose(model);
+            //model.Meshes
             skeleton = skeleton1;
         }
 
@@ -99,6 +120,14 @@ namespace Xna4Test
                 skeleton = skeleton1;
             if (keyboardState.IsKeyDown(Keys.F2))
                 skeleton = skeleton2;
+            //if (keyboardState.IsKeyDown(Keys.F3))
+            //    skeleton = skeleton3;
+            //if (keyboardState.IsKeyDown(Keys.F4))
+            //    skeleton = skeleton4;
+            //if (keyboardState.IsKeyDown(Keys.F5))
+            //    skeleton = skeleton5;
+            //if (keyboardState.IsKeyDown(Keys.F6))
+            //    skeleton = skeleton6;
 
             // TODO: Add your update logic here
 
@@ -111,10 +140,11 @@ namespace Xna4Test
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
         protected override void Draw(GameTime gameTime)
         {
+            GraphicsDevice.DepthStencilState = DepthStencilState.Default;
             GraphicsDevice.Clear(Color.CornflowerBlue);
             GraphicsDevice.RasterizerState = new RasterizerState { CullMode = CullMode.None };
 
-            var view = Matrix.CreateLookAt(new Vector3(0, 0.5f, 2), new Vector3(0, 0.5f, 0), new Vector3(0, 1, 0));
+            var view = Matrix.CreateLookAt(new Vector3(0, 0.5f, 2), new Vector3(0.5f, 2.5f, 0.5f), new Vector3(0, 1, 0));
             var projection = Matrix.CreatePerspectiveFieldOfView(MathHelper.PiOver4, 16f / 9f, 1, 1000);
             var world = Matrix.Identity; // Matrix.CreateRotationY(MathHelper.PiOver2 + MathHelper.PiOver4 + (float)gameTime.TotalGameTime.TotalSeconds * 0.5f);
 
@@ -134,6 +164,7 @@ namespace Xna4Test
                     effect.PreferPerPixelLighting = true;
                     effect.SpecularPower = 800;
                     mesh.Draw();
+                    effect.Texture = Content.Load<Texture2D>("DragonspawnSpectral\\dragonspawn");
                 }
             }
 
@@ -145,26 +176,26 @@ namespace Xna4Test
             GraphicsDevice.DepthStencilState = new DepthStencilState { DepthBufferEnable = false };
 
             List<VertexPositionColor> vertices = new List<VertexPositionColor>();
+            //bones.
+            //foreach (var bone in skeleton.GetBoneTransforms(time))
+            //{
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Forward * 0.05f, Color.Red));
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Right * 0.05f, Color.Red));
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Up * 0.05f, Color.Red));
+            //}
 
-            foreach (var bone in skeleton.GetBoneTransforms(time))
-            {
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Forward * 0.05f, Color.Red));
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Right * 0.05f, Color.Red));
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Red));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Up * 0.05f, Color.Red));
-            }
-
-            foreach (var bone in skeleton.GetBoneTransforms())
-            {
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Forward * 0.05f, Color.Blue));
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Right * 0.05f, Color.Blue));
-                vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
-                vertices.Add(new VertexPositionColor(bone.Translation + bone.Up * 0.05f, Color.Blue));
-            }
+            //foreach (var bone in skeleton.GetBoneTransforms())
+            //{
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Forward * 0.05f, Color.Blue));
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Right * 0.05f, Color.Blue));
+            //    vertices.Add(new VertexPositionColor(bone.Translation, Color.Blue));
+            //    vertices.Add(new VertexPositionColor(bone.Translation + bone.Up * 0.05f, Color.Blue));
+            //}
 
             if (vertices.Any())
                 GraphicsDevice.DrawUserPrimitives<VertexPositionColor>(PrimitiveType.LineList, vertices.ToArray(), 0, vertices.Count / 2);

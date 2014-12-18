@@ -7,7 +7,7 @@ using Microsoft.Xna.Framework.Content.Pipeline;
 using Microsoft.Xna.Framework.Content.Pipeline.Graphics;
 using Microsoft.Xna.Framework.Content.Pipeline.Processors;
 
-// TODO: replace these with the processor input and output types.
+// TODO: replace these with the processor input and output types.取代这些处理器的输入和输出类型。
 using TInput = System.String;
 using TOutput = System.String;
 

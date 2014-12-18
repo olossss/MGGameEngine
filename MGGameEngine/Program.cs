@@ -20,6 +20,7 @@ namespace MGGameEngine
         static void Main()
         {
             using (var game = new GameEngine())
+            //using (var game = new Game1())
                 game.Run();
         }
     }
