@@ -1,0 +1,13 @@
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\HYM.Terrain.library.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\HYM.Terrain.library.pdb
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\artemis.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\LibNoise.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\Lidgren.Network.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\MonoGame.Framework.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\OpenTK.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\Tao.Sdl.dll
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\artemis.xml
+H:\git\MGGameEngine\HYM.Terrain.library\bin\WindowsGL\Debug\LibNoise.xml
+H:\git\MGGameEngine\HYM.Terrain.library\obj\x86\Debug\HYM.Terrain.library.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\HYM.Terrain.library\obj\x86\Debug\HYM.Terrain.library.dll
+H:\git\MGGameEngine\HYM.Terrain.library\obj\x86\Debug\HYM.Terrain.library.pdb

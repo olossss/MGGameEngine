@@ -1,0 +1,2 @@
+H:\git\MGGameEngine\RaisingStudio.Xna.Graphics\obj\x86\Debug\RaisingStudio.Xna.Graphics.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\RaisingStudio.Xna.Graphics\obj\x86\Debug\RaisingStudio.Xna.Graphics.pdb

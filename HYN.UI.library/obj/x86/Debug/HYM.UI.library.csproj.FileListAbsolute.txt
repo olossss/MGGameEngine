@@ -1,0 +1,17 @@
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\HYM.UI.library.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\HYM.UI.library.pdb
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\artemis.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\HYM.System.library.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\Lidgren.Network.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\MonoGame.Framework.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\Myko.Xna.Animation.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\OpenTK.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\PluginInterface.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\Tao.Sdl.dll
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\HYM.System.library.pdb
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\Myko.Xna.Animation.pdb
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\PluginInterface.pdb
+H:\git\MGGameEngine\HYN.UI.library\bin\WindowsGL\Debug\artemis.xml
+H:\git\MGGameEngine\HYN.UI.library\obj\x86\Debug\HYM.UI.library.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\HYN.UI.library\obj\x86\Debug\HYM.UI.library.dll
+H:\git\MGGameEngine\HYN.UI.library\obj\x86\Debug\HYM.UI.library.pdb

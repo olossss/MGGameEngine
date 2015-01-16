@@ -1,0 +1,9 @@
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\PluginInterface.dll
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\PluginInterface.pdb
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\Lidgren.Network.dll
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\MonoGame.Framework.dll
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\OpenTK.dll
+H:\git\MGGameEngine\PluginInterface\bin\WindowsGL\Debug\Tao.Sdl.dll
+H:\git\MGGameEngine\PluginInterface\obj\x86\Debug\PluginInterface.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\PluginInterface\obj\x86\Debug\PluginInterface.dll
+H:\git\MGGameEngine\PluginInterface\obj\x86\Debug\PluginInterface.pdb

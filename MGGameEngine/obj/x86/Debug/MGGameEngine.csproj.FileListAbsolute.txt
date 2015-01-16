@@ -1,0 +1,1 @@
+H:\git\MGGameEngine\MGGameEngine\obj\x86\Debug\MGGameEngine.csprojResolveAssemblyReference.cache
