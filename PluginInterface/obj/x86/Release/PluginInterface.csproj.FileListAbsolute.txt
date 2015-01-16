@@ -15,3 +15,4 @@ H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\PluginInterface\bin
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\PluginInterface\obj\x86\Release\PluginInterface.csprojResolveAssemblyReference.cache
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\PluginInterface\obj\x86\Release\PluginInterface.dll
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\PluginInterface\obj\x86\Release\PluginInterface.pdb
+H:\git\MGGameEngine\PluginInterface\obj\x86\Release\PluginInterface.csprojResolveAssemblyReference.cache

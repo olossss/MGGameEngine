@@ -14,3 +14,4 @@ H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\Yko.Game\bin\Window
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\Yko.Game\bin\WindowsGL\Release\Tao.Sdl.dll
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\Yko.Game\obj\x86\Release\Yko.Game.dll
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\Yko.Game\obj\x86\Release\Yko.Game.pdb
+H:\git\MGGameEngine\Yko.Game\obj\x86\Release\Yko.Game.csprojResolveAssemblyReference.cache

@@ -61,7 +61,6 @@ H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\OpenTK.dll
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\Tao.Sdl.dll
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\GameSystem.pdb
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\artemis.xml
-H:\git\MGGameEngine\MGGameEngine\obj\x86\Release\MGGameEngine.csprojResolveAssemblyReference.cache
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\Content\SpriteFont1.xnb
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\Myko.Xna.Animation.dll
 H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\Myko.Xna.Animation.pdb
@@ -98,3 +97,6 @@ H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\MGGameEngine\bin\Wi
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\MGGameEngine\bin\WindowsGL\Release\HYM.UI.library.pdb
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\MGGameEngine\bin\WindowsGL\Release\Newtonsoft.Json.xml
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\MGGameEngine\obj\x86\Release\MGGameEngine.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\MGGameEngine\obj\x86\Release\MGGameEngine.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\HYM.Terrain.library.dll
+H:\git\MGGameEngine\MGGameEngine\bin\WindowsGL\Release\HYM.Terrain.library.pdb

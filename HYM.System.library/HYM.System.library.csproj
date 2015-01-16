@@ -45,6 +45,7 @@
     <Compile Include="Layer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameComponents\SceneManagerComponents.cs" />
+    <Compile Include="Random\RandomMT.cs" />
     <Compile Include="ScreenManager\Screen.cs" />
     <Compile Include="ScreenManager\SceneManager.cs" />
   </ItemGroup>

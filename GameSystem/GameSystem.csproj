@@ -62,17 +62,6 @@
     <Compile Include="GameEngine.cs" />
     <Compile Include="PluginServices.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Random\Color.cs" />
-    <Compile Include="Random\Hues.cs" />
-    <Compile Include="Random\InclusionOptions.cs" />
-    <Compile Include="Random\LuminosityTypes.cs" />
-    <Compile Include="Random\MathHelper.cs" />
-    <Compile Include="Random\PerlinGenerator.cs" />
-    <Compile Include="Random\RandObject.cs" />
-    <Compile Include="Random\RUL.cs" />
-    <Compile Include="Random\RulCol.cs" />
-    <Compile Include="Random\RulNoise.cs" />
-    <Compile Include="Random\RulVec.cs" />
     <Compile Include="test\Screen1.cs" />
     <Compile Include="test\Screen2.cs" />
     <Compile Include="test\StarScreen.cs" />
@@ -84,6 +73,10 @@
     <ProjectReference Include="..\HYM.System.library\HYM.System.library.csproj">
       <Project>{97649d22-4ece-46f4-b757-9426418bd938}</Project>
       <Name>HYM.System.library</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HYM.Terrain.library\HYM.Terrain.library.csproj">
+      <Project>{c68b8f4a-a46b-4435-8379-9d21729d879f}</Project>
+      <Name>HYM.Terrain.library</Name>
     </ProjectReference>
     <ProjectReference Include="..\HYN.UI.library\HYM.UI.library.csproj">
       <Project>{6bcb597c-81ad-4e18-b279-cdcda9d19022}</Project>

@@ -14,6 +14,7 @@ using Artemis.System;
 using HYM.UI.library;
 using Myko.Xna.Animation;
 using HYM.System.library;
+using HYM.Terrain.library;
 #endregion
 
 namespace GameSystem
@@ -26,7 +27,7 @@ namespace GameSystem
         GraphicsDeviceManager graphics;
 
         SpriteBatch sprites;
-        private SpriteFont font;
+        SpriteFont font;
        
         Camera3DComponents camera;
         GameTime Updatetime;
@@ -46,7 +47,7 @@ namespace GameSystem
             Components.Add(new UIManager(this));
             Components.Add(new SceneManagerComponents(this));
             
-           // Components.Add(new TerrainManagerComponents(this));
+            Components.Add(new TerrainComponents(this));
             //加载插件
             PluginManager.Plugins.FindPlugins("Plugins");
             foreach (Types.AvailablePlugin pluginOn in PluginManager.Plugins.AvailablePlugins)

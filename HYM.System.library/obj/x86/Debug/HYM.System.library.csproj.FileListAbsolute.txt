@@ -1,0 +1,11 @@
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\HYM.System.library.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\HYM.System.library.pdb
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\artemis.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\Lidgren.Network.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\MonoGame.Framework.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\OpenTK.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\Tao.Sdl.dll
+H:\git\MGGameEngine\HYM.System.library\bin\WindowsGL\Debug\artemis.xml
+H:\git\MGGameEngine\HYM.System.library\obj\x86\Debug\HYM.System.library.csprojResolveAssemblyReference.cache
+H:\git\MGGameEngine\HYM.System.library\obj\x86\Debug\HYM.System.library.dll
+H:\git\MGGameEngine\HYM.System.library\obj\x86\Debug\HYM.System.library.pdb

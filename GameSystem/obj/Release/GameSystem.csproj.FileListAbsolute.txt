@@ -108,3 +108,5 @@ H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\GameSystem\bin\Rele
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\GameSystem\obj\Release\GameSystem.csprojResolveAssemblyReference.cache
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\GameSystem\obj\Release\GameSystem.dll
 H:\git\MGGameEngine-a3c4563cdcbcdf00007c3ec0338757cff6bbf099\GameSystem\obj\Release\GameSystem.pdb
+H:\git\MGGameEngine\GameSystem\bin\Release\HYM.Terrain.library.dll
+H:\git\MGGameEngine\GameSystem\bin\Release\HYM.Terrain.library.pdb
